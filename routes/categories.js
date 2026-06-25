@@ -11,6 +11,7 @@ router.get('/', async (req, res) => {
   if (error) return res.status(500).json({ error: error.message });
   res.json(data);
 });
+
 // POST create category
 router.post('/', async (req, res) => {
   const { name, type, user_id } = req.body;
